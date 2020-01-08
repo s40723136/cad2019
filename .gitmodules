@@ -1,6 +1,6 @@
 [submodule "cmsimde"]
 	path = cmsimde
-	url = https://github.com/mdecourse/cmsimde.git
+	url = https://github.com/mdecourse/cmsimde
 
 [submodule "downloads/scrum1"]
 	path = downloads/scrum1
