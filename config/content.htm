@@ -1,94 +1,64 @@
 <h1>About</h1>
-<p>本網站倉儲: <a href="https://s40723136.github.io/cad2019">https://s40723136.github.io/cad2019</a> </p>
-<p><span style="background-color: #ffff00;">電腦輔助設計實習課程目標, 在了解電腦輔助設計工具開發緣起, 並學習如何利用電腦與網路作為輔助工具, 完成所需的實體或虛擬產品設計.</span></p>
-<p>進入 cad2019g0 倉儲中的 downloads 目錄, 將 scrum-1 帳號下的 cad2019 納為 downloads/scrum1 子模組</p>
-<p>cd downloads</p>
-<p>利用 git submodule add https://github.com/scrum-1/cad2019.git  scrum1</p>
-<p> 然後利用 git submodule update --init --recursive 將所有子模組更為最新版本</p>
-<p>假如只是要 git clone 且連同所有原設定版次的子模組, 且至多同時擷取 8 個子模組內容, 使用</p>
-<p style="padding-left: 30px;">git clone --recurse-submodules -j8 https://github.com/mdecourse/cp2019g0.git</p>
-<p>將 <a href="https://github.com/scrum-1/cad2019">https://github.com/scrum-1/cad2019</a> 設為位於 downloads 目錄下的子模組, 且名稱訂為 scrum1</p>
-<p>之後各組員可以在各自的 cp2019 倉儲中建立相關輔助設計程式或零件, 然後直接在 cad2019g0 的環境下引用.</p>
-<p>為何各組員的 cad2019 作為子模組, 需要放在分組網站倉儲 downloads 目錄下?</p>
-<p style="padding-left: 30px;">因為 <a href="https://github.com/mdecourse/cmsimde/blob/master/flaskapp.py">https://github.com/mdecourse/cmsimde/blob/master/flaskapp.py</a> 中的 372 行所宣告的 downloads 函式, 會將其下的動態網站資料路徑送回瀏覽器, 而且轉為靜態網頁時, 882 行的 get_page2 函式會將 downloads 下資料連結的絕對目錄轉為相對目錄.</p>
-<h1>CAD 分組任務</h1>
-<h4><span style="background-color: #ffff00;">電腦與網路:</span></h4>
-<h4 style="padding-left: 30px;">為何選擇在沒有還原保護的電腦磁區上課?</h4>
-<h4 style="padding-left: 30px;">為何要使用可攜隨身程式系統?</h4>
-<h4 style="padding-left: 30px;">為何需要充分了解電腦輔助設計室中的 IPv4 與 IPv6 網路設定流程?</h4>
-<h4 style="padding-left: 30px;">為何要求學員拍攝電腦操作流程影片, 並加上說明字幕?</h4>
-<h4><span style="background-color: #ffff00;">Github:</span></h4>
-<h4 style="padding-left: 30px;">為何要利用 Github 倉儲上課?</h4>
-<h4 style="padding-left: 30px;">為何對 Github 倉儲改版時, 要附上完整的提交說明字串?</h4>
-<h4 style="padding-left: 30px;">為何需要利用網際內容管理 (CMSiMDE)、網誌 (Pelican) 與網際簡報 (reveal.js) 管理個人與分組的課程資料?</h4>
-<h4 style="padding-left: 30px;">為何需要使用 SSH 網路協定維護 Github 上的課程倉儲?</h4>
-<h4><span style="background-color: #ffff00;">CAD 套件:</span></h4>
-<h4 style="padding-left: 30px;">為何要使用 Solvespace上課?</h4>
-<h4 style="padding-left: 30px;">為何要學習 NX?</h4>
-<h4 style="padding-left: 30px;">Onshape 透過網際程式 (利用瀏覽器執行) 與手機或平板執行對使用者有何好處? 為何目前全球有一半用戶使用手機上網擷取資料?</h4>
-<h4><span style="background-color: #ffff00;">多層架構程式:</span></h4>
-<h4 style="padding-left: 30px;">試著想像一下手機上的 Line 程式採用甚麼樣的架構擷取、處理並存放使用者的輸入資料?</h4>
-<h4 style="padding-left: 30px;">試著想像一下 Onshape 採用甚麼樣的架構擷取、處理並回應使用者的輸入資料?</h4>
-<h4><span style="background-color: #ffff00;">其他主題:</span></h4>
-<h4 style="padding-left: 30px;">為何上課要抄寫紙本筆記?</h4>
-<h4 style="padding-left: 30px;">如何利用 Dart 或 Python 程式讀進各班學員名單, 然後採用亂數分組?</h4>
-<p style="padding-left: 60px;">可以將 <a href="https://dartpad.github.io/?id=9f69e77cb456b97cccc8eb5a9dbd991c">https://dartpad.github.io/?id=9f69e77cb456b97cccc8eb5a9dbd991c</a> 寫成函式或 class based 程式嗎?</p>
-<h4 style="padding-left: 30px;">能夠產生亂數資料的程式對機械設計有甚麼用處?</h4>
-<h4 style="padding-left: 30px;">如何利用 Solvespace 建立轉入 V-rep 與 Webots 中所需要的雙輪車或四輪車零組件?</h4>
-<p style="padding-left: 60px;">假如將各組員的 cad2019, 分別依照學號納為分組倉儲中的子模組, 可以由組員在其個人倉儲中, 利用 Solvespace 或 NX 建立雙輪車或四輪車的零件, 然後再由分組倉儲中呼叫引用, 完成最後的零件組立件?</p>
-<p style="padding-left: 60px;">請問如何將 Solvespace 所建立的組合件, 直接 (自動或手動) 呈現在網頁上?</p>
-<p style="padding-left: 60px;"><span>請問如何將 NX 所建立的組合件, 直接 (自動或手動) 呈現在網頁上?</span></p>
-<h4 style="padding-left: 30px;">如何在 SciTE 中執行 Python 程式, 並與 NX 、Solvespace 及 Webots 互動?</h4>
-<p style="padding-left: 60px;">如何設定 SciTE, 以便能在 SciTE 中執行 python 程式, 並利用 NX 產生零組件?</p>
-<p style="padding-left: 60px;"><span>如何設定 SciTE, 以便能在 SciTE 中執行 python 程式, 並利用 Solvespace 產生零組件?</span></p>
-<p style="padding-left: 60px;"><span>如何設定 SciTE, 以便能在 SciTE 中執行 python 程式, 用來控制 Webots 中的組件?</span></p>
-<h4 style="padding-left: 30px;">如何利用 NX 程式建立 <a href="http://mde.tw/cad2019/content/Task2.html">http://mde.tw/cad2019/content/Task2.html</a>中的越野車?</h4>
-<h4 style="padding-left: 30px;">如何利用 NX 程式分析 <a href="http://mde.tw/cad2019/content/Task2.html">http://mde.tw/cad2019/content/Task2.html</a> 中越野車行走時特定連桿的應力分析?</h4>
-<h4 style="padding-left: 30px;">綜合上述相關技術, 如何根據 <a href="http://mde.tw/cad2019/content/Project.html">http://mde.tw/cad2019/content/Project.html</a> 中的說明, 完成一個分組電腦輔助設計專案?</h4>
-<h2>MDer</h2>
-<p><a href="/downloads/A Portable 3D-Printing Enabled Multi-Vehicle Platform for Robotics Research and Education.pdf">A Portable 3D-Printing Enabled Multi-Vehicle Platform for Robotics Research and Education.pdf</a></p>
-<h4>Reference:</h4>
-<p style="padding-left: 30px;"><a href="https://link.springer.com/book/10.1007/978-1-4842-3462-4">Beginning Robotics with Raspberry Pi and Arduino</a></p>
-<p style="padding-left: 30px;"><a href="https://link.springer.com/book/10.1007/978-1-4842-3480-8">Connecting Arduino to the Web</a></p>
-<p style="padding-left: 30px;"><a href="https://link.springer.com/book/10.1007/978-1-4842-5174-4">Machine Learning with the Raspberry Pi</a></p>
-<p style="padding-left: 30px;"><a href="http://www.e-puck.org/">http://www.e-puck.org/</a></p>
-<p style="padding-left: 30px;"><a href="http://www.e-puck.org/index.php?view=article&amp;id=44">http://www.e-puck.org/index.php?view=article&amp;id=44</a></p>
-<p style="padding-left: 30px;"><a href="http://lpuck.sourceforge.net/">http://lpuck.sourceforge.net/</a></p>
-<h1>Future of Work</h1>
-<h4><span style="background-color: #ffff00;">學習如何與未來智能機器合作、共存</span></h4>
-<p>KMOLab 所開列課程的教學目標:</p>
-<p style="padding-left: 30px;">計算機程式 - 了解如何與電腦溝通, 如何利用電腦解決問題</p>
-<p style="padding-left: 30px;">網際內容管理 - 如何在網際環境中進行內容管理</p>
-<p style="padding-left: 30px;">電腦輔助設計 - 如何利用電腦輔助設計</p>
-<p style="padding-left: 30px;">協同產品設計實習 - 如何與其他個體(包含人以及其他)進行協同, 設計開發產品</p>
-<h4>參考影片:</h4>
-<p style="padding-left: 30px;"><a href="https://www.ted.com/talks/andrew_mcafee_what_will_future_jobs_look_like?language=zh-tw">https://www.ted.com/talks/andrew_mcafee_what_will_future_jobs_look_like?language=zh-tw</a></p>
-<p style="padding-left: 30px;"><a href="https://www.ted.com/talks/erik_brynjolfsson_the_key_to_growth_race_with_the_machines?language=zh-tw">https://www.ted.com/talks/erik_brynjolfsson_the_key_to_growth_race_with_the_machines?language=zh-tw</a></p>
-<p style="padding-left: 30px;"><a href="https://www.ted.com/talks/wingham_rowan_a_new_kind_of_job_market?language=zh-tw">https://www.ted.com/talks/wingham_rowan_a_new_kind_of_job_market?language=zh-tw</a></p>
-<p style="padding-left: 30px;"><a href="https://www.ted.com/talks/rainer_strack_the_workforce_crisis_of_2030_and_how_to_start_solving_it_now?language=zh-tw">https://www.ted.com/talks/rainer_strack_the_workforce_crisis_of_2030_and_how_to_start_solving_it_now?language=zh-tw</a></p>
-<p style="padding-left: 30px;"><a href="https://www.ted.com/talks/anthony_goldbloom_the_jobs_we_ll_lose_to_machines_and_the_ones_we_won_t?language=zh-tw">https://www.ted.com/talks/anthony_goldbloom_the_jobs_we_ll_lose_to_machines_and_the_ones_we_won_t?language=zh-tw</a></p>
-<h1>Q and A</h1>
-<p>為了方便在隨身系統環境中進行 Github 倉儲的改版與推送, 利用 batch file 進行近端 <a href="https://github.com/mdecourse/cad2019g0">https://github.com/mdecourse/cad2019g0</a> 倉儲的編輯、檢視與改版.</p>
-<p>近端編輯:</p>
-<p>cad0.bat</p>
-<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">@echo off
-y:
-cd tmp\cad2019g0\cmsimde
-start /WAIT python wsgi.py | sleep 2 | start chrome https://localhost:9443
-cd \
-cls</pre>
-<p>近端檢視:</p>
-<p>cadh0.bat</p>
-<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">@echo off
-y:
-cd tmp\cad2019g0\
-start python http-server.py | sleep 2 | start chrome https://localhost:8444
-cd \
-cls
-</pre>
-<p>新增提交推送:</p>
-<p>cadg0.bat</p>
-<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">@echo off
-y:
-Y:\cad\201906_fall\data\GitExtensions\gitextensions.exe  browse y:\tmp\cad2019g0\</pre>
+<p>本網站倉儲: <a href="https://github.com/s40723136/cad2019">https://github.com/s40723136/cad2019</a></p>
+<p>本網站網址:<a href="https://s40723136.github.io/cad2019" rel="nofollow">https://s40723136.github.io/cad2019</a></p>
+<h1>組別倉儲網站</h1>
+<p>分組網站:<a href="https://s40723148.github.io/cad2019ag1">https://s40723148.github.io/cad2019ag1</a></p>
+<p>分組倉儲:<a href="https://github.com/s40723148/cad2019ag1">https://github.com/s40723148/cad2019ag1</a></p>
+<h1>倉儲網站的使用說明</h1>
+<p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
+<h4>利用 cmsimde 建立靜態網誌方法:</h4>
+<p>1. 在 github 建立倉儲, git clone 到近端</p>
+<p>2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
+<p>以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
+<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
+<p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
+<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
+<p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
+<p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
+<h4>Develop</h4>
+<p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
+<p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
+<p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
+<h1>這段時間做了些什麼</h1>
+<h2>NX</h2>
+<p>繪製小型車給後續WEBOTS與V-REp模擬使用</p>
+<h2>WEBOT</h2>
+<p>根據WEBOTS網站教程進行操作</p>
+<p>網站教程<a href="https://cyberbotics.com/doc/guide/tutorial-1-your-first-simulation-in-webots">https://cyberbotics.com/doc/guide/tutorial-1-your-first-simulation-in-webots</a></p>
+<p>參考老師網頁上轉檔方式將NX繪製小型車進行檔案轉檔並模擬(沒成功)</p>
+<p>WEBOTS轉檔教學<a href="http://mde.tw/cad2019/content/Webots.html">http://mde.tw/cad2019/content/Webots.html</a></p>
+<h2>VREP</h2>
+<p>以老師提供教學檔案學習如何使用</p>
+<p>教程<a href="http://mde.tw/cad2019/content/V-rep%20Manual.html">http://mde.tw/cad2019/content/V-rep%20Manual.html</a></p>
+<p>VREP官網資料<a href="http://www.coppeliarobotics.com/features">http://www.coppeliarobotics.com/features</a></p>
+<h2>ssh設定</h2>
+<p>參考網站<a href="https://www.youtube.com/watch?v=yVgyAHBIyOQ">https://www.youtube.com/watch?v=yVgyAHBIyOQ</a></p>
+<h1>學期測試</h1>
+<h2>W15</h2>
+<h4>W15 2a 查驗</h4>
+<p>請 2a 每位學員在 12:00 之前, 錄製一個至多 3 分鐘帶說明字幕的影片, 說明至今與本課程相關, 所完成的重要內容, 完成後將影片上傳至個人 Youtube 帳號下, 嵌入個人 W15 網頁後, 將倉儲提交連結與影片連結放入下列回應區, 並在回應區寫上個人詳細學習心得.</p>
+<p><a href="https://github.com/mdecourse/cad2019/issues/31">https://github.com/mdecourse/cad2019/issues/31</a></p>
+<h4>說明</h4>
+<p><span>倉儲連結:</span><a href="https://github.com/s40723136/cad2019ag1">https://github.com/s40723136/cad2019ag1</a><br/><span>影片:無</span><br/><span>心得:倉儲僅有follow同組通學的推送，影片也拿不出東西，對於webots的學習進度也異常緩慢v rep學習尚未深入，nx繪製零件雖看著教程還是不會導入webots與v rep無法做到結合，整體來說學習成效不佳還需努力</span></p>
+<h2>W16</h2>
+<h4>W16 2a cad 練習</h4>
+<p>請注意: 只有在 12/27 (五) 09:30-12:00 製作的影片與倉儲所提交的內容納入計分</p>
+<p>請 2a 各學員根據<span> </span><a href="http://mde.tw/cad2019/content/Task2.html" rel="nofollow">Task2</a><span> </span>中<span> </span><a href="https://cad.onshape.com/documents/0c757e42f113318abade702c/w/83a3818a1aef5d4234265d9c/e/0284daee1c8866acdbcf0b9d" rel="nofollow">Onshpae 越野車零組件</a>之尺寸與配置, 利用 Solvespace 完成簡化後的越野車零組件設計繪圖.</p>
+<p>完成後請將所有零組件檔案, 放入個人倉儲 downloads 目錄中的 solvespace 子目錄, 然後將越野車組立件, 以 STL 格式轉出後, 轉入 V-rep 後, 將 ttt 檔案放入個人倉儲 downloads 目錄中的 solvespace 子目錄.</p>
+<p>並將越野車組立件, 以 WRL 格式轉出後, 轉入 Webots 後, 將 wbt 檔案放入個人倉儲 downloads 目錄中的 solvespace 子目錄.</p>
+<p>完成上述查驗任務後, 請將簡要過程拍成至多 3 分鐘的帶說明字幕導覽影片, 並將影片嵌入 W16 查驗頁面後, 將提交連結, 頁面連結與影片連結放入下列回應中, 附上操作心得, 並針對所碰到的問題進行說明討論.</p>
+<p><a href="https://github.com/mdecourse/cad2019/issues/34">https://github.com/mdecourse/cad2019/issues/34</a></p>
+<h4>說明</h4>
+<p><span>40723136</span><br/><span>倉儲:</span><a href="https://github.com/s40723136/cad2019">https://github.com/s40723136/cad2019</a><br/><span>心得:這周也沒辦法拿出影片，但能在倉儲上交出零件，也算是一種進步吧....</span></p>
+<h2>W17</h2>
+<h4>題目一: (各分組協同製作題)</h4>
+<p>請各組組長將<span> </span><a href="http://www.coppeliarobotics.com/helpFiles/en/buildingAModelTutorial.htm" rel="nofollow">http://www.coppeliarobotics.com/helpFiles/en/buildingAModelTutorial.htm</a><span> </span>與<span> </span><a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment" rel="nofollow">https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment</a><span> </span>等兩份教學內容, 平均分配給各組員, 經由翻譯了解操作過程後, 在各分組網站中, 以 "W17 協同任務" 作為頁面標題, 登錄各組員的分配表, 採用中英文並列的方式呈現兩份教學內容.</p>
+<h4>題目二: (各組員獨立製作題)</h4>
+<p>請參考下列影片中的機構設計, 從<span> </span><a href="https://github.com/mdecourse/cad2019/tree/master/downloads/solvespace/curiosity/">https://github.com/mdecourse/cad2019/tree/master/downloads/solvespace/curiosity/</a><span> </span>擷取草圖設計概念, 利用 Solvespace 或 NX12 將原本車身與主連桿所採用的馬達鎖定設計, 改為機械阻尼(彈簧與極限定位)設計, 完成各零件的尺寸標示工程圖與 Engineering Bill of Material 後轉入 V-rep, 將所有 .slvs (或 .prt) 與 .ttt 檔案放入個人倉儲 downloads 目錄中的 w17/curiosity 目錄後, 將操作過程紀錄於個人網站中的 "W17 個人任務" 頁面中, 並嵌入一個至多 2 分鐘, 帶字幕的影片, 介紹說明操作過程與所完成的結果.</p>
+<p><a href="https://www.youtube.com/watch?v=tVROknedL4U" rel="nofollow"><img alt="越野車模擬" data-canonical-src="https://img.youtube.com/vi/tVROknedL4U/0.jpg" src="https://camo.githubusercontent.com/7551452eb56fc36970f37e2069d2e694a2e8a301/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f7456524f6b6e65644c34552f302e6a7067"/></a></p>
+<p>完成上述兩題後, 請各組員將相關連結(包括題目一的個人貢獻連結與題目二的倉儲連結、網頁連結與影片連結), 放入下列回應中, 並針對所碰到的問題進行說明討論.</p>
+<p><a href="https://github.com/mdecourse/cad2019/issues/37">https://github.com/mdecourse/cad2019/issues/37</a></p>
+<h4><span>說明</span></h4>
+<p><span>這週對於車的進度依舊緩慢，</span><br/><span>任務一的內容可以觀看倉儲或是小組倉儲，</span><br/><span>任務二沒有動靜，可能要再另外再花時間製作。</span><br/><span>倉儲:</span><a href="https://github.com/s40723136/cad2019">https://github.com/s40723136/cad2019</a><br/><span>小組倉儲:</span><a href="https://github.com/s40723148/cad2019ag1">https://github.com/s40723148/cad2019ag1</a><br/><span>影片:</span><a href="https://www.youtube.com/channel/UCCkkl-lhe1eX8mlYYH-S1Rw" rel="nofollow">https://www.youtube.com/channel/UCCkkl-lhe1eX8mlYYH-S1Rw</a></p>
+<h2>W18</h2>
 <p></p>
