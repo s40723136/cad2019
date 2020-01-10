@@ -18,11 +18,14 @@
 <v t="leo.20180902120523.6"><vh>body</vh>
 <v t="leo.20180902120523.7"><vh>reveal div</vh>
 <v t="leo.20180902120523.8"><vh>slides div</vh>
-<v t="leo.20180902120523.9"><vh>封面投影片</vh>
-<v t="leo.20180902120523.10"><vh>封面投影片內容</vh></v>
+<v t="leo.20200110093718.1"><vh>過程</vh>
+<v t="leo.20200110093718.2"><vh>歷程</vh></v>
 </v>
 <v t="leo.20200110021616.1"><vh>W18心得</vh>
 <v t="leo.20200110021616.2"><vh>心得</vh></v>
+</v>
+<v t="leo.20180902120523.9"><vh>封面投影片</vh>
+<v t="leo.20180902120523.10"><vh>封面投影片內容</vh></v>
 </v>
 <v t="leo.20180902120523.11"><vh>快捷鍵</vh>
 <v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
@@ -345,5 +348,27 @@ vertical: body pane on the botton</t>
 
 最後感謝老師這一學期對我們的教導
 </t>
+<t tx="leo.20200110093718.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200110093718.2"># 這學期有做了些甚麼
+
+W13嘗試搞懂webots但花太少時間沒有多少進度
+
+嘗試用NX12畫車並轉到V-rep但中文不好看不懂老師的講解
+
+ssh在第14週終於用好
+
+W15赫然發現要用個人網站#，此時才開始更新
+
+W16發現Solvespace不會用趕快亡羊補牢
+
+W17倉儲爆炸砍掉重練原本cad2019更名為cad2019old</t>
 </tnodes>
 </leo_file>
